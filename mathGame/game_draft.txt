@@ -1,0 +1,44 @@
+Class: Players(Names, Lives)
+This class will keep track of the Player objects and their lives with instance variables.
+
+Each player begins with their name and three lives.
+
+Player objects should be initialized with their names and their lives will be incremented with getter and setter attributes.
+
+After asking each question we check to see if true or falsey
+This means that those attributes will need a subtraction method for when a player loses a life by getting an answer wrong(falsey)
+
+If players lives is more than one then game method called.
+
+
+Class User interaction(print messages, user_input return to the Caller)
+
+will output a message saying if answered correct or not
+
+
+Class Game(current_player, game_status)
+
+This class will keep track of whose turn it is.
+
+Has method for checking both players lives after each turn to see if there is a winner
+
+This will then call the player class method to subtract from the players lives if falsey
+{% comment %} If a winner is identified then the lives are reset. {% endcomment %}
+
+calls the questions method if the game continues
+
+initializes with 
+current_player = player_1
+question = set by method
+answer = set by method
+
+
+Class Questions(generate_question, check if truthy/falsey)
+
+Randomly generates a question for each turn,
+
+Calls a check answer method with the gets chomp variable,
+
+{% comment %} Has a method that checks if the answer given is true or not {% endcomment %}
+calls game status method
+
